@@ -1,8 +1,10 @@
-# JNanoId
-[![Build Status](https://travis-ci.org/aventrix/jnanoid.svg?branch=develop)](https://travis-ci.org/aventrix/jnanoid)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aventrix.jnanoid/jnanoid/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aventrix.jnanoid/jnanoid)
+# JNanoId Enhanced
+[![Jitpack](https://jitpack.io/v/Soundicly/jnanoid-enhanced.svg)](https://jitpack.io/#Soundicly/jnanoid-enhanced)
 
 A unique string ID generator for Java. 
+
+## Why Fork?
+Original JNanoId seems to not be maintained anymore. This fork is to add some features.
 
 ### Secure
 JNanoID uses Java’s [SecureRandom](https://docs.oracle.com/javase/7/docs/api/java/security/SecureRandom.html) to generate cryptographically strong random IDs with a proper distribution of characters.
@@ -21,22 +23,39 @@ JNanoID is thoroughly tested with JUnit.
 
 ## Latest Release
 
-The most recent release is JNanoId 2.0.0.
+The most recent release is JNanoId 2.0.2.
 
 ### Maven
 
 ```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
 <dependency>
-  <groupId>com.aventrix.jnanoid</groupId>
-  <artifactId>jnanoid</artifactId>
-  <version>2.0.0</version>
+    <groupId>com.soundicly</groupId>
+    <artifactId>jnanoid-enhanced</artifactId>
+    <version>main-SNAPSHOT</version>
 </dependency>
 ```
 
 ### Gradle
 
 ```groovy
-compile 'com.aventrix.jnanoid:jnanoid:2.0.0'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    implementation 'com.soundicly:jnanoid-enhanced:main-SNAPSHOT'
+}
 ```
 
 ## Usage
@@ -50,6 +69,15 @@ The default method creates secure, url-friendly, unique ids. It uses a url-frien
 ```java
 String id = NanoIdUtils.randomNanoId(); // "ku-qLNv1wDmIS5_EcT3j7"
 ```
+
+#### Standard IDs with custom length - `randomNanoId(size)`
+
+An additional method that allows you to generate a secure unique ID with a customizable number of characters.
+
+```java
+String id = NanoIdUtils.randomNanoId(5); // "f7Yd4"
+```
+
 
 #### Custom IDs - `NanoIdUtils.randomNanoId(random, alphabet, size);`
 
