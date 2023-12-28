@@ -237,4 +237,25 @@ public class NanoIdUtilsTest {
         NanoIdUtils.randomNanoId(new SecureRandom(), new char[] {'a', 'b', 'c'}, 0);
     }
 
+    // TODO: Write correct tests for randomNanoId(alphabet, size)
+    /*
+    @Test
+    public void testRandomNanoIdWithCustomAlphabet() {
+        final char[] alphabet = "0123456789abcdef".toCharArray();
+        final int size = 10;
+        final Set<String> ids = new HashSet<>();
+
+        for (int i = 0; i < 10000; i++) {
+            String id = NanoIdUtils.randomNanoId(alphabet, size);
+            assertEquals("Generated ID has incorrect length", size, id.length());
+
+            for (char c : id.toCharArray()) {
+                assertTrue("Generated ID contains invalid characters", new String(alphabet).contains(String.valueOf(c)));
+            }
+
+            assertTrue("Generated ID is not unique", ids.add(id));
+        }
+    }
+    */
+
 }

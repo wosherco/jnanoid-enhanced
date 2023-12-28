@@ -78,6 +78,18 @@ An additional method that allows you to generate a secure unique ID with a custo
 String id = NanoIdUtils.randomNanoId(5); // "f7Yd4"
 ```
 
+#### Standard IDs with custom alphabet and length - `randomNanoId(alphabet, size)`
+
+An additional method that allows you to generate a secure unique ID with a customizable alphabet and number of characters.
+
+```java
+
+// Use a custom alphabet containing only a, b, and c
+char[] alphabet = {'a','b','c'};
+
+String id = NanoIdUtils.randomNanoId(alphabet, 5); // "accab"
+```
+
 
 #### Custom IDs - `NanoIdUtils.randomNanoId(random, alphabet, size);`
 
