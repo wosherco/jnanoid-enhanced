@@ -1,3 +1,5 @@
+# ⚠️ 10th of October this library will be moved to https://github.com/wosherco/jnanoid-enhanced, together with the jitpack repo.
+
 # JNanoId Enhanced
 [![Jitpack](https://jitpack.io/v/Soundicly/jnanoid-enhanced.svg)](https://jitpack.io/#Soundicly/jnanoid-enhanced)
 
