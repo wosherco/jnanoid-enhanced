@@ -1,7 +1,7 @@
-# ⚠️ 10th of October this library will be moved to https://github.com/wosherco/jnanoid-enhanced, together with the jitpack repo.
+# ⚠️ Library moved from Soundicly/jnanoid-enhanced to wosherco/jnanoid-enhanced
 
 # JNanoId Enhanced
-[![Jitpack](https://jitpack.io/v/Soundicly/jnanoid-enhanced.svg)](https://jitpack.io/#Soundicly/jnanoid-enhanced)
+[![Jitpack](https://jitpack.io/v/wosherco/jnanoid-enhanced.svg)](https://jitpack.io/#wosherco/jnanoid-enhanced)
 
 A unique string ID generator for Java. 
 
@@ -38,7 +38,7 @@ The most recent release is JNanoId 2.0.2.
 </repositories>
 
 <dependency>
-    <groupId>com.soundicly</groupId>
+    <groupId>co.wosher</groupId>
     <artifactId>jnanoid-enhanced</artifactId>
     <version>main-SNAPSHOT</version>
 </dependency>
@@ -56,7 +56,7 @@ dependencyResolutionManagement {
 }
 
 dependencies {
-    implementation 'com.soundicly:jnanoid-enhanced:main-SNAPSHOT'
+    implementation 'co.wosher:jnanoid-enhanced:main-SNAPSHOT'
 }
 ```
 
