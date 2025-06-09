@@ -46,17 +46,31 @@ The most recent release is JNanoId 2.0.2.
 
 ### Gradle
 
+#### Groovy
+
 ```groovy
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
+repositories {
+    // ...your existing repos
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
+    // ...your existing dependencies
     implementation 'co.wosher:jnanoid-enhanced:main-SNAPSHOT'
+}
+```
+
+#### Kotlin
+
+```kotlin
+repositories {
+    // ...your existing repos
+    maven { url = uri("https://jitpack.io") }
+}
+
+dependencies {
+    // ...your existing dependencies
+    implementation("co.wosher:jnanoid-enhanced:main-SNAPSHOT")
 }
 ```
 
