@@ -38,7 +38,7 @@ The most recent release is JNanoId 2.0.2.
 </repositories>
 
 <dependency>
-    <groupId>co.wosher</groupId>
+    <groupId>com.github.wosherco</groupId>
     <artifactId>jnanoid-enhanced</artifactId>
     <version>main-SNAPSHOT</version>
 </dependency>
@@ -56,7 +56,7 @@ repositories {
 
 dependencies {
     // ...your existing dependencies
-    implementation 'co.wosher:jnanoid-enhanced:main-SNAPSHOT'
+    implementation 'com.github.wosherco:jnanoid-enhanced:main-SNAPSHOT'
 }
 ```
 
@@ -70,7 +70,7 @@ repositories {
 
 dependencies {
     // ...your existing dependencies
-    implementation("co.wosher:jnanoid-enhanced:main-SNAPSHOT")
+    implementation("com.github.wosherco:jnanoid-enhanced:main-SNAPSHOT")
 }
 ```
 
